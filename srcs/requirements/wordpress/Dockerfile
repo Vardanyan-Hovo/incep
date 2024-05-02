@@ -27,7 +27,6 @@ RUN apk update && apk upgrade && apk add --no-cache \
       /etc/php8/php-fpm.d/www.conf && \
     sed -i "s|;listen.group = nobody|listen.group = nobody|g" \
       /etc/php8/php-fpm.d/www.conf && \
-    
     # Clean up
     rm -f /var/cache/apk/*
 
